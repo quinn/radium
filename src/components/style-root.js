@@ -46,10 +46,10 @@ class StyleRoot extends PureComponent<StyleRootProps> {
     /* eslint-enable no-unused-vars */
 
     return (
-      <div {...otherProps}>
+      <React.Fragment {...otherProps}>
         {this.props.children}
         <StyleSheet />
-      </div>
+      </React.Fragment>
     );
   }
 }
